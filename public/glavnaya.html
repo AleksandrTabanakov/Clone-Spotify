@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href ="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <style>
+      #zatemnenie {
+        background: rgba(102, 102, 102, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+      }
+      #okno {
+        width: 300px;
+        height: 110px;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid #0000cc;
+        border-radius: 10px;
+        color: red;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: #fff;
+      }
+      #zatemnenie:target {display: block;}
+      .close {
+        display: inline-block;
+        border: 1px solid #0000cc;
+        color: #0000cc;
+        padding: 0 12px;
+        margin: 10px;
+        text-decoration: none;
+        background: #f2f2f2;
+        font-size: 14pt;
+        cursor:pointer;
+      }
+      .close:hover {background: #e6e6ff;}
+    </style>
+  </head>
+  <body class="app">
+    <header class="header">
+    <nav class="header_navigation" tabindex="0">
+      <a  href="./formareg.html" class="link"> <span style="color: #FFFFFF"> Зарегистрироваться </span> </a>
+     <a href="./formavoiti.html" class="link"><span style="color: white;"> Войти  </span></a>
+
+    </nav>
+    </header>
+    
+    <aside class="sidebar">
+      
+      <a href="./glavnaya.html" class="sidebar__logo link" tabindex="0" href="/" >
+        <img src="./img/Spotify.png" alt="Логотип" width="45" height="45"/>
+        <h1 class="sidebar__title">  <span style="color: white;">Spotify</span></h1>
+      </a>
+      <a href="./glavnaya.html" class="link2"><span style="color:red;">&#128190;  Главная </span>
+      </a>
+      <a href="./search.html" class="link2"><span style="color:white;">&#128269; Поиск </span>
+      </a>
+      <a href="#zatemnenie" class="link2"><span style="color:white;">&#128293; Моя медиатека </span>
+      </a>
+      <a href="./NewMusic.html" class="link2"><span style="color:white;">&#128276; Новинка </span>
+      </a>
+
+    </aside>
+             
+     <main class="content" tabindex="0">
+
+      <div id="zatemnenie">
+        <div id="okno">
+          Чтобы воспользоваться этой функцией, сначала авторизуйтесь или зарегистрируйтесь!<br>
+          <a href="#" class="close">Закрыть окно</a>
+        </div>
+        </div>
+
+      <h1 class="content__title"><span style="color: white;">Подборка музыки по предпочтениям пользователей</span></h1>
+      <a href="#zatemnenie" class="content__logo" href="/" >
+      <h1 class="content__img"> <img src="./img/Miksone.jpg" alt="Логотип" width="184" height="262"/>
+      </a>
+      <a href="#zatemnenie" class="content__logo" href="/" >
+        <img src="./img/Mikstwo.jpg" alt="Логотип" width="184" height="262"/>
+      </a>
+      <a href="#zatemnenie" class="content__logo" href="/" >
+        <img src="./img/Miksthree.jpg" alt="Логотип" width="184" height="262"/>     
+      </h1> </a> 
+
+      <h1 class="content__title" ><span style="color: white;">Танцевальные треки</span></h1>     
+      <a href="#zatemnenie" class="content__logo" href="/" >
+        <h1 class="content__img"> <img src="./img/Danceone.jpg" alt="Логотип" width="184" height="262"/>
+        </a>
+        <a href="#zatemnenie" class="content__logo" href="/" >
+          <img src="./img/Dancetwo.jpg" alt="Логотип" width="184" height="262"/>
+         </a>
+         <a href="#zatemnenie" class="content__logo" href="/" >
+          <img src="./img/Dancethree.jpg" alt="Логотип" width="184" height="262"/>
+         </h1> </a>
+
+         <h1 class="content__title" ><span style="color: white;">Песенки под настроение</span></h1>
+         <a href="#zatemnenie" class="content__logo" href="/" >
+          <h1 class="content__img"> <img src="./img/Moodone.jpg" alt="Логотип" width="184" height="262"/>
+          </a>
+          <a href="#zatemnenie" class="content__logo" href="/" >
+            <img src="./img/Moodtwo.jpg" alt="Логотип" width="184" height="262"/>
+          </h1></a>
+
+        <h1 class="content__title" ><span style="color: white;">Популярные релизы</span></h1>
+        <a href="#zatemnenie" class="content__logo" href="/" >
+        <h1 class="content__img" tabindex="0"> <img src="./img/Popularone.jpg" alt="Логотип" width="184" height="262"/>
+        </a>
+        <a href="#zatemnenie" class="content__logo" href="/" >
+          <img src="./img/Populartwo.jpg" alt="Логотип" width="184" height="262"/>
+        </a>
+        <a href="#zatemnenie" class="content__logo" href="/" >
+          <img src="./img/Popularthree.jpg" alt="Логотип" width="184" height="262"/>     
+         </a> 
+         <a href="#zatemnenie" class="content__logo" href="/" >
+          <img src="./img/Popularfour.jpg" alt="Логотип" width="184" height="262"/>     
+        </h1> </a> 
+
+        <h1 class="content__title"><span style="color: white;">Фокус</span></h1>
+          
+        <a  href="#zatemnenie" class="content__logo logo_one" href="/" > 
+          <h1> <img src="./img/Concentrationone.jpg" alt="Логотип" width="184" height="262"/>
+            <a href="#zatemnenie" class="content__logo" href="/" >
+              <img src="./img/Concentrationtwo.jpg" alt="Логотип" width="184" height="262"/>
+               </h1> </a>
+          
+     </main>
+
+     <footer class="footer">
+       <p>©Tensor 2022</p>
+       <nav class="footer_navigation" tabindex="0">
+         <a class="link2" href="https://github.com/AleksandrTabanakov">&#128073;Github</a>
+         <a
+         class="link2"
+         href="https://vk.com/virussanya"
+         target="_blank"
+         rel="noopener"> &#128073;VK
+        </a>
+       </nav>
+     </footer>
+
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
