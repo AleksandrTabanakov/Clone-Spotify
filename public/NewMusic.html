@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link rel="stylesheet" href ="./newmus.css" />
+    <link rel="stylesheet" href ="./styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -20,104 +20,58 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    <style>
-      #zatemnenie {
-        background: rgba(102, 102, 102, 0.5);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: none;
-      }
-      #okno {
-        width: 300px;
-        height: 110px;
-        text-align: center;
-        padding: 15px;
-        border: 3px solid #0000cc;
-        border-radius: 10px;
-        color: red;
-        position:absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        background: #fff;
-      }
-      #zatemnenie:target {display: block;}
-      .close {
-        display: inline-block;
-        border: 1px solid #0000cc;
-        color: #0000cc;
-        padding: 0 12px;
-        margin: 15px;
-        text-decoration: none;
-        background: #f2f2f2;
-        font-size: 14pt;
-        cursor:pointer;
-      }
-      .close:hover {background: #e6e6ff;}
-    </style>
+    
   </head>
   <body class="app">
     <header class="header">
     <nav class="header_navigation">
-      <a  href="./formareg.html" class="link"> <span style="color: #FFFFFF"> Зарегистрироваться </span> </a>
-     <a href="./formavoiti.html" class="link"><span style="color: white;"> Войти  </span></a>
-
+      <a  href="./formareg.html" class="link"> Зарегистрироваться </a>
+     <a href="./formavoiti.html" class="link"> Войти </a>
     </nav>
     </header>
     
     <aside class="sidebar">
-      <a href="./glavnaya.html" class="sidebar__logo link"tabindex="0" href="/" >
-        <img src="./img/Spotify.png" alt="Логотип" width="45" height="45"/>
-        <h1 class="sidebar__title">  <span style="color: white;">Spotify</span></h1>
+      <a href="./glavnaya.html" class="sidebar__logo link">
+        <img src="./img/Spotify.png"class="logo2" alt="Логотип"/>
+        <h1 class="sidebar__title"> Spotify</h1>
       </a>
-      <a href="./glavnaya.html" class="link2"><span style="color:white;">&#128190;  Главная </span>
+      <a href="./glavnaya.html" class="link2">&#128190;  Главная 
       </a>
-      <a href="./search.html" class="link2"><span style="color:white;">&#128269; Поиск </span>
+      <a href="./search.html" class="link2">&#128269; Поиск 
       </a>
-      <a href="#zatemnenie" class="link2"><span style="color:white;">&#128293; Моя медиатека </span>
+      <a href="#blackout " class="link2">&#128293; Моя медиатека 
       </a>
-      <a href="./NewMusic.html" class="link2"><span style="color:red;">&#128276; Новинка </span>
+      <a href="./NewMusic.html" class="link2 glavnaya">&#128276; Новинка
       </a>
     </aside>
 
      <main class="content" tabindex="0">
-
-     
-
-      <h1 class="content__title" ><span style="color: white;">Новинки</span></h1>
+      <h1 class="content__title" >Новинки</h1>
       <ol>
-          <li class="li" style="color:white"  value="1">
+          <li class="li" value="1">
             <p class="conten_name"> "Анастасия Сотникова - Типа того"</p>
-            <audio controls>
-            
+            <audio controls>          
               <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis"> 
               <source src="./mp3/Анастасия Сотникова - Типа того.mp3" type="audio/mpeg">  
               </audio>
           </li>
-          <li class="li" style="color:white">
+          <li class="li">
             <p class="conten_name"> "Одинокий тип Мари Краймбрери"</p>
             <audio controls>
               <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
-              <source src="./mp3/mari-krajmbreri-odinokij-tip-mp3.mp3" type="audio/mpeg">
-              
+              <source src="./mp3/mari-krajmbreri-odinokij-tip-mp3.mp3" type="audio/mpeg">              
               </audio>
           </li>
-          <li class="li" style="color:white">
+          <li class="li">
             <p class="conten_name"> "2 Типа Людей Макс Корж"</p>
             <audio controls>
               <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
-              <source src="./mp3/maks-korzh-2-tipa-lyudej-mp3.mp3" type="audio/mpeg">
-              
+              <source src="./mp3/maks-korzh-2-tipa-lyudej-mp3.mp3" type="audio/mpeg">        
               </audio>
           </li>
       </ol>
-      <div id="zatemnenie">
-        <div id="okno">
+      <div id="blackout">
+        <div id="window">
           Чтобы воспользоваться этой функцией, сначала авторизуйтесь или зарегистрируйтесь!<br>
           <a href="#" class="close">Закрыть окно</a>
         </div>
@@ -137,8 +91,6 @@
         </nav>
       </footer>
  
-
-
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
