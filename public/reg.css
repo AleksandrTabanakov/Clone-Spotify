@@ -4,36 +4,36 @@
     box-sizing: border-box;
 }
 
-.app
+.app__registration
 {
   display: flex;
   justify-content: center; 
-  background-color: #2d2d2d;
+  background-color: rgb(45, 45, 45);
 }
-.content__logo
+.content__logo__registration
 {
  margin-left: 30px;
  text-decoration:none;
 }
-.content__title
+.content__title__registration
 { 
     padding-top: 30px;
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
 }
-.forma
+.forma__registration
 { 
     padding-left: 30px;   
 }
-.button
+.button__registration
 {
-  border: 3px black;
+  border: 3px rgb(0, 0, 0);
   margin-left: 20px;
-  background:black;
+  background:rgb(0, 0, 0);
   border-radius: 20px;
   padding: 13px;
-  color:#FFFFFF;
+  color:rgb(255, 255, 255);
 }
-.button:hover
+.button__registration:hover
 {
   text-decoration: underline;
 }
