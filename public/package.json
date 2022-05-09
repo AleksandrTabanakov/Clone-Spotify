@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "mybuild":"tsc",
+    "build watch":"tsc --watch",
+    "serve": "serve"
+  }, 
+  "devDependencies": {
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "serve": "13.0.2"   
+  }
+  
+  
+}
