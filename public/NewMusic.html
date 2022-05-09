@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="stylesheet" href ="./styles.css" />
+    <script src="./scriptMethodAdd.js"defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -30,7 +31,7 @@
     </nav>
     </header>
     
-    <aside class="sidebar">
+     <aside class="sidebar">
       <a href="./glavnaya.html" class="sidebar__logo link">
         <img src="./img/Spotify.png"class="logo2" alt="Логотип"/>
         <h1 class="sidebar__title"> Spotify</h1>
@@ -39,7 +40,7 @@
       </a>
       <a href="./search.html" class="link2">&#128269; Поиск 
       </a>
-      <a href="#blackout " class="link2">&#128293; Моя медиатека 
+      <a href="./MediaLibrary.html" class="link2">&#128293; Моя медиатека 
       </a>
       <a href="./NewMusic.html" class="link2 glavnaya">&#128276; Новинка
       </a>
@@ -47,13 +48,16 @@
 
      <main class="content" tabindex="0">
       <h1 class="content__title" >Новинки</h1>
+      
       <ol>
-          <li class="li" value="1">
+        <section class="playlist"> 
+          <li class="li" >
             <p class="conten_name"> "Анастасия Сотникова - Типа того"</p>
             <audio controls>          
               <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis"> 
               <source src="./mp3/Анастасия Сотникова - Типа того.mp3" type="audio/mpeg">  
               </audio>
+              <button type="button" class="item-actions_action item-actions_type_add">Добавить</button>
           </li>
           <li class="li">
             <p class="conten_name"> "Одинокий тип Мари Краймбрери"</p>
@@ -61,6 +65,7 @@
               <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
               <source src="./mp3/mari-krajmbreri-odinokij-tip-mp3.mp3" type="audio/mpeg">              
               </audio>
+              <button type="button" class="item-actions_action item-actions_type_add">Добавить</button>
           </li>
           <li class="li">
             <p class="conten_name"> "2 Типа Людей Макс Корж"</p>
@@ -68,14 +73,10 @@
               <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
               <source src="./mp3/maks-korzh-2-tipa-lyudej-mp3.mp3" type="audio/mpeg">        
               </audio>
+              <button type="button" class="item-actions_action item-actions_type_add">Добавить</button>
           </li>
+        </section>
       </ol>
-      <div id="blackout">
-        <div id="window">
-          Чтобы воспользоваться этой функцией, сначала авторизуйтесь или зарегистрируйтесь!<br>
-          <a href="#" class="close">Закрыть окно</a>
-        </div>
-        </div>
      </main>
 
      <footer class="footer">

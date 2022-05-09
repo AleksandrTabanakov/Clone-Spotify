@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="stylesheet" href ="./styles.css" />
+    <script src="./sctiptandapi.js"defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -40,47 +41,48 @@
       </a>
       <a href="./search.html" class="link2 glavnaya">&#128269; Поиск
       </a>
-      <a href="#blackout" class="link2">&#128293; Моя медиатека
+      <a href="./MediaLibrary.html" class="link2">&#128293; Моя медиатека
       </a>
       <a href="./NewMusic.html" class="link2">&#128276; Новинка
       </a>
     </aside>
 
     <main class="content" tabindex="0">
-      <div id="blackout">
-        <div id="window">
-          Чтобы воспользоваться этой функцией, сначала авторизуйтесь или зарегистрируйтесь!<br>
-          <a href="#" class="close">Закрыть окно</a>
-        </div>
-        </div>
+   
       <h1 class="content__title">Всё остальное</h1>
-      <a href="#blackout" class="content__logo">
-      <h1 class="content__img"> <img src="./img2/1search.jpg" class="picture_search" alt="Логотип"/>
-      </a>
-      <a href="#blackout" class="content__logo">
+      <section class="music"> 
+      <h1 class="content__img"> 
+        <button type="button" class="content__button" id="workout"> 
+          <img src="./img2/1search.jpg" class="picture_search" alt="Логотип">
+        </button>
+        <button type="button" class="content__button" id="decades">
         <img src="./img2/2search.jpg" class="picture_search" alt="Логотип"/>
-      </a>
-      <a href="#blackout" class="content__logo">
-        <img src="./img2/3search.jpg" class="picture_search" alt="Логотип"/>     
-       </a> 
-      <a href="#blackout" class="content__logo">
+        </button>
+        <button type="button" class="content__button"id="party">
+        <img src="./img2/3search.jpg" class="picture_search" alt="Логотип"/> 
+        </button> 
+        <button type="button" class="content__button"id="rock">
        <img src="./img2/4search.jpg" class="picture_search" alt="Логотип"/>
-        </a>
-        <a href="#blackout" class="content__logo">
+        </button>
+        <button type="button" class="content__button"id="edm_dance">
           <img src="./img2/5search.jpg" class="picture_search" alt="Логотип"/>
-         </a>
-         <a href="#blackout" class="content__logo">
+        </button>
+        <button type="button" class="content__button"id="jazz">
           <img src="./img2/6search.jpg" class="picture_search" alt="Логотип"/>
-          </a>      
-         <a href="#blackout" class="content__logo">
+        </button>      
+        <button type="button" class="content__button"id="indie_alt">
          <img src="./img2/7search.jpg" class="picture_search" alt="Логотип"/>
-          </a>
-          <a href="#blackout" class="content__logo">
-            <img src="./img2/8search.jpg" class="picture_search" alt="Логотип"/>
-          </a>
-        <a href="#blackout" class="content__logo">
+        </button>
+        <button type="button" class="content__button"id="pop">
+            <img src="./img2/8search.jpg" class="picture_search" alt="Логотип"/> 
+        </button>
+        <button type="button" class="content__button"id="wellness">
        <img src="./img2/9search.jpg" class="picture_search" alt="Логотип"/>
-        </h1></a>
+        </button> </h1>
+     <ol>
+
+     </ol>
+      </section>
      </main>
 
      <footer class="footer">
