@@ -150,7 +150,7 @@ async function albomList(button)
   return musicPlayLists;
 }
 //работа с searc.hthml
-async function searchhtml(PLAY_LIST)
+async function searchHtml(PLAY_LIST)
 {
    //клик по кнопке(плейлисту)
    const SEARCH_INPUT=document.querySelector('.header__search');
@@ -208,7 +208,7 @@ const PLAY_LIST=document.querySelector('.music');
 if(PLAY_LIST!=null)
 {
    //метод который вызывается на search.html странице
-     searchhtml(PLAY_LIST);
+     searchHtml(PLAY_LIST);
 }
 else
 {
