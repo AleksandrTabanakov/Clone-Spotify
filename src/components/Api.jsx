@@ -3,14 +3,12 @@ const clientSecret = '17d4d73674ec468dbce16c09e9ed2ed4';
 //Проверка на то, есть ли у нас уже токен
 function getCookie(name) {
     let matches = document.cookie.split(';');
-    for(let i=0;i<matches.length;i++)
+    for(let i=0; i < matches.length; i++)
     {
-       if(matches[i][0]===' ')
-      { 
+       if(matches[i][0]===' '){ 
          matches[i]=matches[i].slice(1);
       }
-       if(matches[i].substring(0,7)===name)
-       {
+       if(matches[i].substring(0,7)===name){
           return matches[i].substring(8);
        }
     }
@@ -60,14 +58,14 @@ function getCookie(name) {
 export default class Api
 {
    //поиск треков 
-    static async _getSearch (search)  {
+    static async getSearch (search)  {
       const limit=10;
       const link=`https://api.spotify.com/v1/search?q=${search}&type=track&limit=${limit}`;
       const data = await ApiReduction(link);
       return data;
   }
   //получение трека
-  static async _getTracks (tracksEndPoint)  {
+  static async getTracks (tracksEndPoint)  {
    let numberplaylist=tracksEndPoint.split(' '); 
    const play=await _getPlaylistByGenre(numberplaylist[0]);
       const limit=50;

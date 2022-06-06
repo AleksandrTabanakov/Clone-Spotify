@@ -1,6 +1,8 @@
 export default function Infotrack(tracksinfo)
-{  let artists = ""; 
-tracksinfo.tracksinfo.artists.forEach((artist, index) => {
+{ 
+  //Будем получать всех артистов 
+  let artists = ""; 
+  tracksinfo.tracksinfo.artists.forEach((artist, index) => {
   artists += artist.name;
   if (tracksinfo.tracksinfo.artists.length !== index + 1) {
   artists += ", ";
