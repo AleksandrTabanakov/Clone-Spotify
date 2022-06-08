@@ -57,7 +57,7 @@
   {
     text-decoration: underline;
   }
-  .linkSidebar
+  .transition
   {
     font-size: 20px;
     padding-left: 13px;
@@ -66,7 +66,7 @@
     flex-shrink: 0;
     color:rgb(255, 255, 255);
   }
-  .linkSidebar:hover
+  .transition:hover
   {
     text-decoration: underline;
   }
