@@ -1,32 +1,18 @@
 //Компонент для отображение sidebar главной страницы
-import { Link } from "react-router-dom"
-export default function Sidebar(type)
-{
-  //Смотрим какую страницу отрисовать
-  if(type.type==="Home"){
-    return (
+import { Link } from "react-router-dom";
+export default function Sidebar({ type }) {
+  return (
     <aside className="sidebar">
-    <Link to="/" className="sidebar__logo link">
-    <img src="./img/Spotify.png"className="logo2" alt="Логотип"/>
-    <h1 className="sidebar__title">  Spotify</h1>
-    </Link>
-    <Link to="/" className="link2 glavnaya">&#128190;  Главная
-    </Link>
-    <Link to="/search" className="link2"> &#128269; Поиск 
-    </Link>
-  </aside>);
-  } //иначе поисковую
-  else{
-    return (
-      <aside className="sidebar">
       <Link to="/" className="sidebar__logo link">
-      <img src="./img/Spotify.png"className="logo2" alt="Логотип"/>
-      <h1 className="sidebar__title">  Spotify</h1>
+        <img src="./img/Spotify.png" className="logo2" alt="Логотип" />
+        <h1 className="sidebar__title"> Spotify</h1>
       </Link>
-      <Link to="/" className="link2">&#128190;  Главная
+      <Link to="/" className={type === "Home" ? "linkSidebar main" : "linkSidebar"}>
+        &#128190; Главная
       </Link>
-      <Link to="/search" className="link2 glavnaya"> &#128269; Поиск 
+      <Link to="/search" className={type === "Search" ? "linkSidebar main" : "linkSidebar"}>
+        &#128269; Поиск
       </Link>
-    </aside>);
-  }
+    </aside>
+  );
 }
