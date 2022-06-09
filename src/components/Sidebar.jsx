@@ -7,10 +7,10 @@ export default function Sidebar({ type }) {
         <img src="./img/Spotify.png" className="logo2" alt="Логотип" />
         <h1 className="sidebar__title"> Spotify</h1>
       </Link>
-      <Link to="/" className={type === "Home" ? "transition main" : "transition"}>
+      <Link to="/" className={`${type === "Home" ? "main" : null} transition`}>
         &#128190; Главная
       </Link>
-      <Link to="/search" className={type === "Search" ? "transition main" : "transition"}>
+      <Link to="/search" className={`${type === "Search" ? "main" : null} transition`}>
         &#128269; Поиск
       </Link>
     </aside>
