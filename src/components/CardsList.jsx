@@ -68,7 +68,7 @@ export default function CardsList({ onPopupCallback, type }) {
           <h1 className="content__title">{item.text}</h1>
           <h1 className="content__img">
             {item.depth.map((album) => {
-              return <Card onPopupCallback={onPopupCallback} album={album} type={type} />;
+              return <Card  key={album.id} onPopupCallback={onPopupCallback} album={album} type={type} />;
             })}
           </h1>
         </div>
@@ -77,7 +77,7 @@ export default function CardsList({ onPopupCallback, type }) {
   } //иначе с search работает
   else {
     return imgurlSearch.map((album) => {
-      return <Card onPopupCallback={onPopupCallback} album={album} type={type} />;
+      return <Card key={album.id} onPopupCallback={onPopupCallback} album={album} type={type} />;
     });
   }
 }

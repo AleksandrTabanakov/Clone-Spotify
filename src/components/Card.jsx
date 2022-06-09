@@ -1,7 +1,6 @@
 export default function Card({ onPopupCallback, album, type }) {
     return (
       <button
-        key={album.id}
         type="button"
         className="content__button"
         onClick={() => {
