@@ -1,3 +1,11 @@
+/*
+* @function Card
+* метод, который отрисовывает картинки
+* @param {Objects} onPopupCallback отвечает за имя той кнопки, которую кликнули
+* @param {String} type тип страницы
+* @param {Object} album наши треки
+* @returns {Object} data данные
+*/
 export default function Card({ onPopupCallback, album, type }) {
     return (
       <button

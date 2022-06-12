@@ -1,3 +1,7 @@
+/*
+* @param {Objects} tracksinfo информация о треке
+* @return {HTMLElement} 
+*/
 export default function Infotrack(tracksinfo) {
   //Будем получать всех артистов
   let artists = "";

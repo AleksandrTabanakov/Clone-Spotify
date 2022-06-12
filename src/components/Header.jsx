@@ -1,5 +1,10 @@
 //Компонент для отображение header поисковой страницы
 import debounce from "lodash.debounce";
+/*
+* @param {String} type тип страницы
+* @param {Objects} onSearchCallback отвечает за поисковую строку
+* @return {HTMLElement} Header
+*/
 export default function HeaderSearch({ onSearchCallback, type }) {
   //Смотрим какую страницу отрисовать
   if (type === "Home") {

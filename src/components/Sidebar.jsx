@@ -1,5 +1,9 @@
 //Компонент для отображение sidebar главной страницы
 import { Link } from "react-router-dom";
+/*
+* @param {String} type тип страницы
+* @return {HTMLElement} Sidebar
+*/
 export default function Sidebar({ type }) {
   return (
     <aside className="sidebar">

@@ -1,4 +1,7 @@
 //Компонент для отображение футера
+/*
+* @return {HTMLElement} Footer 
+*/
 export default function Footer()
 {
     return(

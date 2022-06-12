@@ -1,5 +1,9 @@
 import Infotrack from "./Infotrack";
 //Вывод музыки из поисковика
+/*
+* @param {Object} item список пришедших треков
+* @return {HTMLElement} поисковой страницы
+*/
 export default function MusicSearch(item) {
   return (
     <div>

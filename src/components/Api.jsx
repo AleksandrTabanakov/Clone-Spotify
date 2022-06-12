@@ -1,6 +1,10 @@
 const clientId = "c7879aa82e414a59b2e762b308012bca";
 const clientSecret = "17d4d73674ec468dbce16c09e9ed2ed4";
 //Проверка на то, есть ли у нас уже токен
+/*
+* @param {string} получает строку куки
+* @return {string|null}
+*/
 function getCookie(name) {
   let matches = document.cookie.split(";");
   for (let i = 0; i < matches.length; i++) {

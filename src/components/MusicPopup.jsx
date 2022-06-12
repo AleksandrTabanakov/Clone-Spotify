@@ -1,5 +1,9 @@
 import Infotrack from "./Infotrack";
 //вывод музыки для Popup
+/*
+* @param {Objects}item информация о треке
+* @return {HTMLElement} 
+*/
 export default function MusicPopup(item) {
   return (
     <div>

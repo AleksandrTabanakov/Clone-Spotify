@@ -2,6 +2,9 @@
 import { useState } from "react";
 import CardsList from "./CardsList";
 import Popup from "./Popup";
+/*
+* @return {HTMLElement} Content главной страницы
+*/
 export default function ContentIndex() {
   //для попапа
   const [popupActive, setPopupActive] = useState(false);

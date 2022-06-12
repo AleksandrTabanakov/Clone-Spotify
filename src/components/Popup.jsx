@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import Api from "./Api";
 import MusicPopup from "./MusicPopup";
 //выводим треки в попап
+/*
+* @param {хук} active,setActive информация о кликнутой кнопке
+* @return {HTMLElement} Отрисовка в зависимости от хука, если !null, значит отрисовка Popup
+*/
 const Popup = ({ active, setActive }) => {
   const [category, setCategory] = useState(null);
   const getSearchData = async () => {

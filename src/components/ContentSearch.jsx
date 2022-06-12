@@ -4,6 +4,10 @@ import Api from "./Api";
 import Popup from "./Popup";
 import MusicSearch from "./MusicSearch";
 import CardsList from "./CardsList";
+/*
+* @param {String} Value получает поисковую строку
+* @return {HTMLElement} Content поисковой страницы
+*/
 export default function ContentSearch(Value) {
   //мои папки с треками
   const searchValue = Value.searchValue;

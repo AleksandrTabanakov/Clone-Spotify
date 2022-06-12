@@ -58,26 +58,32 @@ const imgurlSearch = [
   { url: "./img2/8search.jpg", id: "pop 0" },
   { url: "./img2/9search.jpg", id: "wellness 0" },
 ];
-
+/*
+* @function CardsList
+* метод, который возвращает список треков в popup и реагирует на нужную нам кнопку
+* @param {Objects} onPopupCallback отвечает за имя той кнопки, которую кликнули
+* @param {String} type тип страницы
+* @returns {Object} data данные
+*/
 export default function CardsList({ onPopupCallback, type }) {
   //Контент на страницу Home
   if (type === "Home") {
-    return AlbumCard.map((item) => {
+    return AlbumCard.map((item,index) => {
       return (
         <div key={item.key}>
           <h1 className="content__title">{item.text}</h1>
           <h1 className="content__img">
             {item.depth.map((album) => {
-              return <Card  key={album.id} onPopupCallback={onPopupCallback} album={album} type={type} />;
+              return <Card  key={album.id+index} onPopupCallback={onPopupCallback} album={album} type={type} />;
             })}
           </h1>
         </div>
       );
     });
-  } //иначе с search работает
+  }
   else {
-    return imgurlSearch.map((album) => {
-      return <Card key={album.id} onPopupCallback={onPopupCallback} album={album} type={type} />;
+    return imgurlSearch.map((album,index) => {
+      return <Card key={album.id+index} onPopupCallback={onPopupCallback} album={album} type={type} />;
     });
   }
 }
