@@ -68,13 +68,13 @@ const imgurlSearch = [
 export default function CardsList({ onPopupCallback, type }) {
   //Контент на страницу Home
   if (type === "Home") {
-    return AlbumCard.map((item,index) => {
+    return AlbumCard.map((item,count) => {
       return (
         <div key={item.key}>
           <h1 className="content__title">{item.text}</h1>
           <h1 className="content__img">
             {item.depth.map((album) => {
-              return <Card  key={album.id+index} onPopupCallback={onPopupCallback} album={album} type={type} />;
+              return <Card  key={album.id+count} onPopupCallback={onPopupCallback} album={album} type={type} />;
             })}
           </h1>
         </div>
@@ -82,8 +82,8 @@ export default function CardsList({ onPopupCallback, type }) {
     });
   }
   else {
-    return imgurlSearch.map((album,index) => {
-      return <Card key={album.id+index} onPopupCallback={onPopupCallback} album={album} type={type} />;
+    return imgurlSearch.map((album,count) => {
+      return <Card key={album.id+count} onPopupCallback={onPopupCallback} album={album} type={type} />;
     });
   }
 }
