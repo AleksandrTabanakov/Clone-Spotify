@@ -56,7 +56,7 @@ const imgurlSearch = [
   { url: "./img2/6search.jpg", id: "jazz 0" },
   { url: "./img2/7search.jpg", id: "indie_alt 0" },
   { url: "./img2/8search.jpg", id: "pop 0" },
-  { url: "./img2/9search.jpg", id: "wellness 0" },
+  { url: "./img2/9search.jpg", id: "chill 0" },
 ];
 /*
 * @function CardsList
